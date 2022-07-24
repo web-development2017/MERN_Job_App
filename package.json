@@ -1,0 +1,23 @@
+{
+  "name": "mern_job_app",
+  "version": "1.0.0",
+  "description": "MERN App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-development2017/MERN_Job_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-development2017/MERN_Job_App/issues"
+  },
+  "homepage": "https://github.com/web-development2017/MERN_Job_App#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
