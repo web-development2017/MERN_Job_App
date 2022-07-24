@@ -2,12 +2,15 @@ const express = require('express');
 
 require('dotenv').config();
 
-const allRoutes = require('./routes/router');
+const allRoutes = require('./routes/allRoutes');
 const connectDB = require('./config/db');
 
 const port = process.env.PORT || 5000;
 
 const app = express();
+
+//Middleware
+app.use(express.json());
 
 //Connect to database
 connectDB().then(() => {
@@ -18,11 +21,11 @@ connectDB().then(() => {
 
 const subDirectory = '/api/items';
 
-app.use(express.json());
-//Global middleware that runs every time between a req res
+//Global middleware that run on every time between req res
 app.use((req, res, next) => {
     console.log(req.path, req.method)
     next()
 });
 
+//Routes
 app.use(subDirectory, allRoutes);
