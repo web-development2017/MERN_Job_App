@@ -21,6 +21,7 @@
   "homepage": "https://github.com/web-development2017/MERN_Job_App#readme",
   "dependencies": {
     "dotenv": "^16.0.1",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mongoose": "^6.4.6"
   }
 }
