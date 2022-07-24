@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "start": "node server/index.js",
     "dev": "nodemon server/index.js"
   },
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/web-development2017/MERN_Job_App#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.4.6"
