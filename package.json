@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/web-development2017/MERN_Job_App/issues"
   },
-  "homepage": "https://github.com/web-development2017/MERN_Job_App#readme",
+  "homepage": "https://mern-stack-job-app.herokuapp.com/",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
